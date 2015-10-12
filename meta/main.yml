@@ -1,11 +1,12 @@
 ---
-dependencies: []
+dependencies: 
+  - { role: yfix.php }
 
 galaxy_info:
-  author: geerlingguy
+  author: yfix
   description: Composer PHP Dependency Manager
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  company: "Yfix group"
+  license: "license (MIT)"
   min_ansible_version: 1.4
   platforms:
   - name: EL

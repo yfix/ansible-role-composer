@@ -1,6 +1,6 @@
 # Ansible Role: Composer
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-composer.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-composer)
+[![Build Status](https://travis-ci.org/yfix/ansible-role-composer.svg?branch=master)](https://travis-ci.org/yfix/ansible-role-composer)
 
 Installs Composer, the PHP Dependency Manager, on any Linux or UNIX system.
 
@@ -32,10 +32,6 @@ A list of packages to install globally (using `composer global require`). If you
 
 If `true`, and if there are any configured `composer_global_packages`, the `vendor/bin` directory inside `composer_home_path` will be added to the system's default `$PATH` (for all users).
 
-    composer_github_oauth_token: ''
-
-GitHub OAuth token, used to avoid GitHub API rate limiting errors when building and rebuilding applications using Composer. Follow GitHub's directions to [Create a personal access token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) if you run into these rate limit errors.
-
 ## Dependencies
 
 None (but make sure you've installed PHP; the `geerlingguy.php` role is recommended).
@@ -44,14 +40,6 @@ None (but make sure you've installed PHP; the `geerlingguy.php` role is recommen
 
     - hosts: servers
       roles:
-        - geerlingguy.composer
+        - { role: yfix.composer }
 
 After the playbook runs, `composer` will be placed in `/usr/local/bin/composer` (this location is configurable), and will be accessible via normal system accounts.
-
-## License
-
-MIT / BSD
-
-## Author Information
-
-This role was created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
