@@ -34,7 +34,7 @@ If `true`, and if there are any configured `composer_global_packages`, the `vend
 
 ## Dependencies
 
-None (but make sure you've installed PHP; the `geerlingguy.php` role is recommended).
+None (but make sure you've installed PHP; the `yfix.php` role is recommended).
 
 ## Example Playbook
 
